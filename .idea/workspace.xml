@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4ebc8582-8913-44a2-89be-b0db86362c5f" name="Changes" comment="add new user form. 4 in 1 hook">
+      <change afterPath="$PROJECT_DIR$/pet-app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-app/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-app/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-app/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-app/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-app/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-app/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-app/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-app/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-app/src/API/asyncActions/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-app/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-app/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-app/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-app/src/Components/UsersForm/UsersForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-app/src/Components/UsersForm/UsersForm.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-app/src/Components/UsersItem/UsersItem.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-app/src/Components/UsersItem/UsersItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-app/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-app/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-app/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-app/src/store/cashReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-app/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pet-app/src/store/usersReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pet-app" beforeDir="false" afterPath="$PROJECT_DIR$/pet-app" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/pet-app" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/pet-app" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="ProjectId" id="205LJXmxyOIT7EDhzQdhu91HC2K" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pet-app/src/Components/UsersForm" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Front\pet-app\src\Components\UsersForm" />
+      <recent name="C:\Front\pet-app\src\Components\UsersItem" />
+      <recent name="C:\Front\pet-app\src\store" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="pet-app/src/index.js" working-dir="$PROJECT_DIR$">
+      <method v="2">
+        <option name="NpmBeforeRunTask" enabled="true">
+          <package-json value="$PROJECT_DIR$/pet-app/package.json" />
+          <command value="run" />
+          <scripts>
+            <script value="start" />
+          </scripts>
+          <node-interpreter value="project" />
+          <envs />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ebc8582-8913-44a2-89be-b0db86362c5f" name="Changes" comment="" />
+      <created>1635329430344</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635329430344</updated>
+      <workItem from="1635329431574" duration="466000" />
+      <workItem from="1635329937412" duration="5072000" />
+      <workItem from="1635339627902" duration="3023000" />
+      <workItem from="1635347142458" duration="3892000" />
+      <workItem from="1635399720379" duration="2266000" />
+      <workItem from="1635418469168" duration="6203000" />
+      <workItem from="1635434689856" duration="4121000" />
+      <workItem from="1635488057676" duration="1023000" />
+      <workItem from="1635489109573" duration="39000" />
+      <workItem from="1635489165163" duration="796000" />
+      <workItem from="1635502100195" duration="2821000" />
+      <workItem from="1635517716289" duration="1590000" />
+      <workItem from="1635525053082" duration="2411000" />
+      <workItem from="1635580218622" duration="3192000" />
+      <workItem from="1635601349286" duration="3602000" />
+      <workItem from="1635606750974" duration="2524000" />
+      <workItem from="1635655334519" duration="4589000" />
+      <workItem from="1635710433817" duration="594000" />
+      <workItem from="1635755072205" duration="26000" />
+      <workItem from="1635756195542" duration="3755000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="add new user form. 4 in 1 hook" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new user form. 4 in 1 hook" />
+  </component>
+</project>
