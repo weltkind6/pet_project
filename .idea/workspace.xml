@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ebc8582-8913-44a2-89be-b0db86362c5f" name="Changes" comment="add new user form. 4 in 1 hook">
-      <change afterPath="$PROJECT_DIR$/pet-app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-app/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-app/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-app/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-app/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-app/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-app/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-app/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-app/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-app/src/API/asyncActions/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-app/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-app/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-app/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-app/src/Components/UsersForm/UsersForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-app/src/Components/UsersForm/UsersForm.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-app/src/Components/UsersItem/UsersItem.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-app/src/Components/UsersItem/UsersItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-app/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-app/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-app/src/reportWebVitals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-app/src/store/cashReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-app/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pet-app/src/store/usersReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pet-app" beforeDir="false" afterPath="$PROJECT_DIR$/pet-app" afterDir="false" />
-    </list>
+    <list default="true" id="4ebc8582-8913-44a2-89be-b0db86362c5f" name="Changes" comment="add new user form. 4 in 1 hook" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,7 +97,7 @@
       <workItem from="1635655334519" duration="4589000" />
       <workItem from="1635710433817" duration="594000" />
       <workItem from="1635755072205" duration="26000" />
-      <workItem from="1635756195542" duration="3755000" />
+      <workItem from="1635756195542" duration="5498000" />
     </task>
     <servers />
   </component>
