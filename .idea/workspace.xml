@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f624c24e-852c-42f6-a90b-2203088773c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/UI/Button/MyButton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Button/MyButton.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/UsersForm/UsersForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersForm/UsersForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/UsersForm/UsersForm.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersForm/UsersForm.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Button/MyButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Button/MyButton.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Button/MyButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Button/MyButton.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +76,7 @@
           <package-json value="$PROJECT_DIR$/package.json" />
           <command value="run" />
           <scripts>
-            <script value="build" />
+            <script value="start" />
           </scripts>
           <node-interpreter value="project" />
           <envs />

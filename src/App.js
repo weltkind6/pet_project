@@ -5,6 +5,7 @@ import {getCustomers} from "./API/asyncActions/users";
 import UsersItem from "./Components/UsersItem/UsersItem";
 import React, {useState} from "react";
 import UsersForm from "./Components/UsersForm/UsersForm";
+import MyButton from "./UI/Button/MyButton";
 
 
 function App() {
@@ -12,7 +13,6 @@ function App() {
     const dispatch = useDispatch()
     const users = useSelector(state => state.user.userCount)
     const [formAction, setFormAction] = React.useState(false)
-    console.log()
 
     // Add 4 in 1 hook
     const [addNewUser, setAddNewUser] = useState({
@@ -22,7 +22,6 @@ function App() {
         phone: ''
     })
     const addFullUser = (e) => {
-        console.log('Really works!')
         e.preventDefault()
         dispatch(addUserActionCreator({
             ...addNewUser, id: Date.now()
@@ -42,11 +41,8 @@ function App() {
 
     return (
         <div className="App">
-            <button
-                type="button"
-                onClick={() => dispatch(getCustomers())}
-                className="btn btn-warning">Small data
-            </button>
+            <MyButton onClick={() => dispatch(getCustomers())}>Small data</MyButton>
+            <MyButton onClick={getFormOnclick} myClass={'openFormBtn'}>Open form</MyButton>
             <UsersItem deleteUser={deleteUser} users={users}/>
             {formAction ?
                 <UsersForm
@@ -57,7 +53,6 @@ function App() {
                 />
                 : null
             }
-            <button onClick={getFormOnclick}>Open form</button>
         </div>
     );
 }

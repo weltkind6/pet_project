@@ -34,7 +34,7 @@ const UsersForm = ({setAddNewUser, addNewUser, addFullUser, setFormAction}) => {
                 type={'tel'}
                 onChange={e => setAddNewUser({...addNewUser, phone: e.target.value})}
             />
-            <MyButton onClick={addFullUser}>Add user</MyButton>
+            <MyButton onClick={addFullUser} myClass={classes.formButton}>Add user</MyButton>
         </form>
     );
 };

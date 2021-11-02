@@ -4,3 +4,6 @@
   margin: 1em;
   cursor: pointer;
 }
+.openFormBtn {
+  background-color: lightblue !important;
+}
