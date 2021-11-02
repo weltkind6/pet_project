@@ -6,7 +6,7 @@ import FormItem from "./UsersItem/FormItem";
 const UsersForm = ({setAddNewUser, addNewUser, addFullUser}) => {
     return (
         <form className={classes.form}>
-                <strong>Add new user</strong>
+                <h5 className={classes.formTitle}>Add new user</h5>
             <FormItem
                 label={'First name'}
                 ph={'first name'}
@@ -34,7 +34,7 @@ const UsersForm = ({setAddNewUser, addNewUser, addFullUser}) => {
             <button
                 type='submit'
                 onClick={addFullUser}
-                className="btn btn-light">
+                className={classes.formBtn}>
                 Add customer
             </button>
         </form>
