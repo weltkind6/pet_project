@@ -1,0 +1,20 @@
+.myBtn {
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 6px 12px;
+    margin: 15px 12px 6px 12px;
+    float: right;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.myBtn {
+    background-color: rgb(43, 153, 91);
+    border: 1px solid rgb(33, 126, 74);
+}
+
+.myBtn:hover {
+    background-color: rgb(75, 183, 141);
+}

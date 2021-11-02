@@ -3,6 +3,7 @@ import './UsersForm.module.css'
 import classes from './UsersForm.module.css';
 import FormItem from "./UsersItem/FormItem";
 import Close from "../../UI/Close/Close";
+import MyButton from "../../UI/Button/MyButton";
 
 const UsersForm = ({setAddNewUser, addNewUser, addFullUser, setFormAction}) => {
     return (
@@ -33,12 +34,7 @@ const UsersForm = ({setAddNewUser, addNewUser, addFullUser, setFormAction}) => {
                 type={'tel'}
                 onChange={e => setAddNewUser({...addNewUser, phone: e.target.value})}
             />
-            <button
-                type='submit'
-                onClick={addFullUser}
-                className={classes.formBtn}>
-                Add customer
-            </button>
+            <MyButton onClick={addFullUser}>Add user</MyButton>
         </form>
     );
 };

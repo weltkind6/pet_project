@@ -22,6 +22,7 @@ function App() {
         phone: ''
     })
     const addFullUser = (e) => {
+        console.log('Really works!')
         e.preventDefault()
         dispatch(addUserActionCreator({
             ...addNewUser, id: Date.now()

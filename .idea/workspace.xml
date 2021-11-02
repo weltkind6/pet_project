@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f624c24e-852c-42f6-a90b-2203088773c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/UI/Close/Close.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Close/Close.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Button/MyButton.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Button/MyButton.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/UsersForm/UsersForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersForm/UsersForm.jsx" afterDir="false" />
@@ -46,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/UI/Close" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/UI/Button" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -57,12 +57,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Front\pet-app\src\UI\Button" />
       <recent name="C:\Front\pet-app\src\UI\Close" />
       <recent name="C:\Front\pet-app\src\Components\UsersForm" />
       <recent name="C:\Front\pet-app\src\Components\UsersItem" />
       <recent name="C:\Front\pet-app\src\store" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Front\pet-app\src\UI\Close" />
       <recent name="C:\Front\pet-app\src\Components\UsersItem" />
     </key>
   </component>
