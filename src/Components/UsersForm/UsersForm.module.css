@@ -9,6 +9,7 @@
     transform: translate3d(-50%, -50%, 0);
     padding: 1em;
     background-color: gainsboro;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .formItem {
@@ -42,4 +43,7 @@
 
 .formBtn:hover {
     background-color: rgb(75, 183, 141);
+}
+.close {
+
 }

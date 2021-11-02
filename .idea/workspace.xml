@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ebc8582-8913-44a2-89be-b0db86362c5f" name="Changes" comment="add new user form. 4 in 1 hook" />
+    <list default="true" id="f624c24e-852c-42f6-a90b-2203088773c2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/UI/Close/Close.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Close/Close.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UsersForm/UsersForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersForm/UsersForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UsersForm/UsersForm.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersForm/UsersForm.module.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +30,7 @@
         <entry key="$PROJECT_DIR$/pet-app" value="main" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/pet-app" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="205LJXmxyOIT7EDhzQdhu91HC2K" />
@@ -39,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pet-app/src/Components/UsersForm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/UI/Close" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -50,19 +57,23 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Front\pet-app\src\UI\Close" />
       <recent name="C:\Front\pet-app\src\Components\UsersForm" />
       <recent name="C:\Front\pet-app\src\Components\UsersItem" />
       <recent name="C:\Front\pet-app\src\store" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Front\pet-app\src\Components\UsersItem" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration name="index.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="pet-app/src/index.js" working-dir="$PROJECT_DIR$">
+    <configuration name="index.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="src/index.js" working-dir="$PROJECT_DIR$">
       <method v="2">
         <option name="NpmBeforeRunTask" enabled="true">
-          <package-json value="$PROJECT_DIR$/pet-app/package.json" />
+          <package-json value="$PROJECT_DIR$/package.json" />
           <command value="run" />
           <scripts>
-            <script value="start" />
+            <script value="build" />
           </scripts>
           <node-interpreter value="project" />
           <envs />

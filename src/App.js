@@ -11,7 +11,8 @@ function App() {
 
     const dispatch = useDispatch()
     const users = useSelector(state => state.user.userCount)
-    const [state, setState] = React.useState(false)
+    const [formAction, setFormAction] = React.useState(false)
+    console.log()
 
     // Add 4 in 1 hook
     const [addNewUser, setAddNewUser] = useState({
@@ -25,7 +26,7 @@ function App() {
         dispatch(addUserActionCreator({
             ...addNewUser, id: Date.now()
         }))
-        setState(false)
+        setFormAction(false)
     }
 
 
@@ -35,7 +36,7 @@ function App() {
     }
     // Get Form
     const getFormOnclick = () => {
-        setState(true)
+        setFormAction(true)
     }
 
     return (
@@ -46,8 +47,13 @@ function App() {
                 className="btn btn-warning">Small data
             </button>
             <UsersItem deleteUser={deleteUser} users={users}/>
-            {state ?
-                <UsersForm setAddNewUser={setAddNewUser} addNewUser={addNewUser} addFullUser={addFullUser}/>
+            {formAction ?
+                <UsersForm
+                    setAddNewUser={setAddNewUser}
+                    addNewUser={addNewUser}
+                    addFullUser={addFullUser}
+                    setFormAction={setFormAction}
+                />
                 : null
             }
             <button onClick={getFormOnclick}>Open form</button>

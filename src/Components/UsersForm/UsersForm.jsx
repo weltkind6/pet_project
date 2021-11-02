@@ -2,11 +2,13 @@ import React from 'react';
 import './UsersForm.module.css'
 import classes from './UsersForm.module.css';
 import FormItem from "./UsersItem/FormItem";
+import Close from "../../UI/Close/Close";
 
-const UsersForm = ({setAddNewUser, addNewUser, addFullUser}) => {
+const UsersForm = ({setAddNewUser, addNewUser, addFullUser, setFormAction}) => {
     return (
         <form className={classes.form}>
-                <h5 className={classes.formTitle}>Add new user</h5>
+            <Close setFormAction={setFormAction}/>
+            <h5 className={classes.formTitle}>Add new user</h5>
             <FormItem
                 label={'First name'}
                 ph={'first name'}
