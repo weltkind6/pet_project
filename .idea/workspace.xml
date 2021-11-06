@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f624c24e-852c-42f6-a90b-2203088773c2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/API/API.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/Reducers/getUsersReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/Reducers/preloaderReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Preloader/Preloader.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/asyncActions/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/asyncActions/users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UsersForm/UsersForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersForm/UsersForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UsersForm/UsersForm.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersForm/UsersForm.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Button/MyButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Button/MyButton.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Button/MyButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Button/MyButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/UI/Button" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Redux/Reducers" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -58,13 +60,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Front\pet-app\src\Redux\Reducers" />
+      <recent name="C:\Front\pet-app\src\UI\Preloader" />
       <recent name="C:\Front\pet-app\src\UI\Button" />
       <recent name="C:\Front\pet-app\src\UI\Close" />
       <recent name="C:\Front\pet-app\src\Components\UsersForm" />
-      <recent name="C:\Front\pet-app\src\Components\UsersItem" />
-      <recent name="C:\Front\pet-app\src\store" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Front\pet-app\src\Redux" />
+      <recent name="C:\Front\pet-app\src" />
       <recent name="C:\Front\pet-app\src\UI\Close" />
       <recent name="C:\Front\pet-app\src\Components\UsersItem" />
     </key>
@@ -87,7 +91,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4ebc8582-8913-44a2-89be-b0db86362c5f" name="Changes" comment="" />
+      <changelist id="f624c24e-852c-42f6-a90b-2203088773c2" name="Changes" comment="" />
       <created>1635329430344</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -112,6 +116,11 @@
       <workItem from="1635710433817" duration="594000" />
       <workItem from="1635755072205" duration="26000" />
       <workItem from="1635756195542" duration="5498000" />
+      <workItem from="1635927169340" duration="5000" />
+      <workItem from="1636111832543" duration="31000" />
+      <workItem from="1636111889094" duration="5748000" />
+      <workItem from="1636194692561" duration="74000" />
+      <workItem from="1636194784891" duration="6242000" />
     </task>
     <servers />
   </component>

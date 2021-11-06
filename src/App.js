@@ -1,17 +1,20 @@
 import './App.css';
 import {useDispatch, useSelector} from "react-redux";
-import {addUserActionCreator, deleteUserActionCreator} from "./store/usersReducer";
+import {addUserActionCreator, deleteUserActionCreator} from "./Redux/Reducers/usersReducer";
 import {getCustomers} from "./API/asyncActions/users";
 import UsersItem from "./Components/UsersItem/UsersItem";
 import React, {useState} from "react";
 import UsersForm from "./Components/UsersForm/UsersForm";
 import MyButton from "./UI/Button/MyButton";
+import {preloaderReducerAc} from "./Redux/Reducers/preloaderReducer";
+import Preloader from "./UI/Preloader/Preloader";
 
 
 function App() {
 
     const dispatch = useDispatch()
     const users = useSelector(state => state.user.userCount)
+    const newReducer = useSelector(state => state.preloader.loaded)
     const [formAction, setFormAction] = React.useState(false)
 
     // Add 4 in 1 hook
@@ -53,6 +56,7 @@ function App() {
                 />
                 : null
             }
+            {newReducer ? <Preloader/> : console.log('Your data has been received')}
         </div>
     );
 }

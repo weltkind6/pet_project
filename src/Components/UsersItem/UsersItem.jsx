@@ -20,10 +20,11 @@ const UsersItem = ({deleteUser, users}) => {
                         onClick={() => deleteUser(u.id)}
                         key={u.id}>
                         <td>{u.id}</td>
-                        <td>{u.firstName}</td>
-                        <td>{u.lastName}</td>
+                        <td>{u.name}</td>
+                        <td>{u.username}</td>
+                        {/*<td>{u.lastName}</td>*/}
                         <td>{u.email}</td>
-                        <td>{u.phone}</td>
+                        {/*<td>{u.phone}</td>*/}
                     </tr>)}
                 </tbody>
             </table>
