@@ -7,3 +7,14 @@
 .openFormBtn {
   background-color: lightblue !important;
 }
+.openFormBtn:hover {
+  background-color: deepskyblue !important;
+}
+.smallDataBtn:hover {
+  background: #2b995b !important;
+}
+.buttonsBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

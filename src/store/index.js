@@ -8,7 +8,7 @@ import {preloaderReducer} from "../Redux/Reducers/preloaderReducer";
 
 const rootReducer = combineReducers({
     user: usersReducer,
-    preloader: preloaderReducer
+    preloader: preloaderReducer,
 })
 // Подключаем мидлварэ в девтулзы.
 export const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)))

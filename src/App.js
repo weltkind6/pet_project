@@ -6,8 +6,8 @@ import UsersItem from "./Components/UsersItem/UsersItem";
 import React, {useState} from "react";
 import UsersForm from "./Components/UsersForm/UsersForm";
 import MyButton from "./UI/Button/MyButton";
-import {preloaderReducerAc} from "./Redux/Reducers/preloaderReducer";
 import Preloader from "./UI/Preloader/Preloader";
+import Search from "./Components/Search/Search";
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     const dispatch = useDispatch()
     const users = useSelector(state => state.user.userCount)
     const newReducer = useSelector(state => state.preloader.loaded)
-    const [formAction, setFormAction] = React.useState(false)
+    const [formAction, setFormAction] = useState(false)
 
     // Add 4 in 1 hook
     const [addNewUser, setAddNewUser] = useState({
@@ -44,8 +44,11 @@ function App() {
 
     return (
         <div className="App">
-            <MyButton onClick={() => dispatch(getCustomers())}>Small data</MyButton>
-            <MyButton onClick={getFormOnclick} myClass={'openFormBtn'}>Open form</MyButton>
+            <div className='buttonsBlock'>
+                <MyButton onClick={() => dispatch(getCustomers())} myClass={'smallDataBtn'}>Small data</MyButton>
+                <MyButton onClick={getFormOnclick} myClass={'openFormBtn'}>Open form</MyButton>
+                <Search users={users} />
+            </div>
             <UsersItem deleteUser={deleteUser} users={users}/>
             {formAction ?
                 <UsersForm
@@ -56,7 +59,7 @@ function App() {
                 />
                 : null
             }
-            {newReducer ? <Preloader/> : console.log('Your data has been received')}
+            {newReducer ? <Preloader/> : null}
         </div>
     );
 }

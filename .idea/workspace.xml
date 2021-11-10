@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f624c24e-852c-42f6-a90b-2203088773c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/API/API.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Reducers/getUsersReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Redux/Reducers/preloaderReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Preloader/Preloader.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Alert/Alert.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Search/Search.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Search/Search.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UI/Preloader/Preloader.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/API/asyncActions/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/asyncActions/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/preloaderReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/preloaderReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/usersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/usersReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Preloader/Preloader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Preloader/Preloader.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +40,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="205LJXmxyOIT7EDhzQdhu91HC2K" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -49,7 +61,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Redux/Reducers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/UI/Preloader" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -60,13 +72,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Front\pet-app\src\Redux\Reducers" />
       <recent name="C:\Front\pet-app\src\UI\Preloader" />
+      <recent name="C:\Front\pet-app\src\Components\Search" />
+      <recent name="C:\Front\pet-app\src\Redux\Reducers" />
       <recent name="C:\Front\pet-app\src\UI\Button" />
       <recent name="C:\Front\pet-app\src\UI\Close" />
-      <recent name="C:\Front\pet-app\src\Components\UsersForm" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Front\pet-app\src\Redux\Reducers" />
       <recent name="C:\Front\pet-app\src\Redux" />
       <recent name="C:\Front\pet-app\src" />
       <recent name="C:\Front\pet-app\src\UI\Close" />
@@ -120,7 +133,12 @@
       <workItem from="1636111832543" duration="31000" />
       <workItem from="1636111889094" duration="5748000" />
       <workItem from="1636194692561" duration="74000" />
-      <workItem from="1636194784891" duration="6242000" />
+      <workItem from="1636194784891" duration="7051000" />
+      <workItem from="1636270411790" duration="13624000" />
+      <workItem from="1636386960018" duration="5265000" />
+      <workItem from="1636443206092" duration="2735000" />
+      <workItem from="1636451116559" duration="5551000" />
+      <workItem from="1636529967018" duration="6148000" />
     </task>
     <servers />
   </component>
