@@ -3,21 +3,40 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f624c24e-852c-42f6-a90b-2203088773c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Alert/Alert.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Search/Search.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Search/Search.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UI/Preloader/Preloader.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/API/asyncActions/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/asyncActions/users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Search/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersItem/Search/Search.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Search/Search.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersItem/Search/Search.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UsersForm/UsersForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersForm/UsersForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UsersForm/UsersItem/FormItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersForm/FormItem/FormItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/preloaderReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/preloaderReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/getUsersReducer.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/usersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/usersReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Preloader/Preloader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Preloader/Preloader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Button/MyButton.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Button/MyButton.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Preloader/Preloader.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Preloader/Preloader.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,12 +77,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/UI/Preloader" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -71,19 +93,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Front-end\pet_project\src\Components\UsersItem" />
+      <recent name="C:\Front-end\pet_project\src\Components\UsersForm\UsersItem" />
+      <recent name="C:\Front\pet-app\src\Redux\Reducers" />
+      <recent name="C:\Front\pet-app\src\Redux" />
+      <recent name="C:\Front\pet-app\src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Front\pet-app\src\UI\Preloader" />
       <recent name="C:\Front\pet-app\src\Components\Search" />
       <recent name="C:\Front\pet-app\src\Redux\Reducers" />
       <recent name="C:\Front\pet-app\src\UI\Button" />
       <recent name="C:\Front\pet-app\src\UI\Close" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Front\pet-app\src\Redux\Reducers" />
-      <recent name="C:\Front\pet-app\src\Redux" />
-      <recent name="C:\Front\pet-app\src" />
-      <recent name="C:\Front\pet-app\src\UI\Close" />
-      <recent name="C:\Front\pet-app\src\Components\UsersItem" />
     </key>
   </component>
   <component name="RunManager">
@@ -101,7 +123,10 @@
       </method>
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f624c24e-852c-42f6-a90b-2203088773c2" name="Changes" comment="" />
@@ -139,11 +164,20 @@
       <workItem from="1636443206092" duration="2735000" />
       <workItem from="1636451116559" duration="5551000" />
       <workItem from="1636529967018" duration="6148000" />
+      <workItem from="1637129432044" duration="230000" />
+      <workItem from="1637129680311" duration="8952000" />
+      <workItem from="1637147910123" duration="12000" />
+      <workItem from="1637154260306" duration="431000" />
+      <workItem from="1637154745169" duration="1816000" />
+      <workItem from="1637157638957" duration="498000" />
+      <workItem from="1637158170276" duration="12000" />
+      <workItem from="1637220528941" duration="7000" />
+      <workItem from="1637220647371" duration="3299000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -161,5 +195,31 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add new user form. 4 in 1 hook" />
     <option name="LAST_COMMIT_MESSAGE" value="add new user form. 4 in 1 hook" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="315" key="FileChooserDialogImpl" timestamp="1637147920617">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="740" y="315" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1637147920617" />
+    <state width="1882" height="279" key="GridCell.Tab.0.bottom" timestamp="1637220690441">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1882" height="279" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1637220690441" />
+    <state width="1882" height="279" key="GridCell.Tab.0.center" timestamp="1637220690441">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1882" height="279" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1637220690441" />
+    <state width="1882" height="279" key="GridCell.Tab.0.left" timestamp="1637220690440">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1882" height="279" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1637220690440" />
+    <state width="1882" height="279" key="GridCell.Tab.0.right" timestamp="1637220690441">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1882" height="279" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1637220690441" />
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1637142278715">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1637142278715" />
   </component>
 </project>

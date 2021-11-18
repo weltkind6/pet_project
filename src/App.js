@@ -7,7 +7,7 @@ import React, {useState} from "react";
 import UsersForm from "./Components/UsersForm/UsersForm";
 import MyButton from "./UI/Button/MyButton";
 import Preloader from "./UI/Preloader/Preloader";
-import Search from "./Components/Search/Search";
+import Search from "./Components/UsersItem/Search/Search";
 
 
 function App() {
@@ -16,6 +16,8 @@ function App() {
     const users = useSelector(state => state.user.userCount)
     const newReducer = useSelector(state => state.preloader.loaded)
     const [formAction, setFormAction] = useState(false)
+    // search
+    const [searchValue, setSearchValue] = useState('')
 
     // Add 4 in 1 hook
     const [addNewUser, setAddNewUser] = useState({
@@ -44,22 +46,28 @@ function App() {
 
     return (
         <div className="App">
-            <div className='buttonsBlock'>
-                <MyButton onClick={() => dispatch(getCustomers())} myClass={'smallDataBtn'}>Small data</MyButton>
-                <MyButton onClick={getFormOnclick} myClass={'openFormBtn'}>Open form</MyButton>
-                <Search users={users} />
-            </div>
-            <UsersItem deleteUser={deleteUser} users={users}/>
-            {formAction ?
-                <UsersForm
-                    setAddNewUser={setAddNewUser}
-                    addNewUser={addNewUser}
-                    addFullUser={addFullUser}
-                    setFormAction={setFormAction}
+            <div className="App-wrapper">
+                <div className='buttonsBlock'>
+                    <MyButton onClick={() => dispatch(getCustomers())} myClass={'smallDataBtn'}>Small data</MyButton>
+                    <MyButton onClick={getFormOnclick} myClass={'openFormBtn'}>Open form</MyButton>
+                </div>
+                <UsersItem
+                    deleteUser={deleteUser}
+                    users={users}
+                    setSearchValue={setSearchValue}
+                    searchValue={searchValue}
                 />
-                : null
-            }
-            {newReducer ? <Preloader/> : null}
+                {formAction ?
+                    <UsersForm
+                        setAddNewUser={setAddNewUser}
+                        addNewUser={addNewUser}
+                        addFullUser={addFullUser}
+                        setFormAction={setFormAction}
+                    />
+                    : null
+                }
+                {newReducer ? <Preloader/> : null}
+            </div>
         </div>
     );
 }

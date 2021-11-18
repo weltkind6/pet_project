@@ -1,7 +1,7 @@
 import React from 'react';
 import './UsersForm.module.css'
 import classes from './UsersForm.module.css';
-import FormItem from "./UsersItem/FormItem";
+import FormItem from "./FormItem/FormItem";
 import Close from "../../UI/Close/Close";
 import MyButton from "../../UI/Button/MyButton";
 

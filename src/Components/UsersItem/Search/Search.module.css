@@ -2,6 +2,6 @@
     display: flex;
     padding-right: 12px;
 }
-.navbar {
-    margin-top: 0.5rem;
+.wrapper {
+    margin: 1em 0;
 }

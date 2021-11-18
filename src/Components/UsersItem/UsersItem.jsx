@@ -1,25 +1,27 @@
 import React from 'react';
-import './UsersItem.css'
-import {useDispatch} from "react-redux";
-import {sortUsersAc} from "../../Redux/Reducers/usersReducer";
+import './UsersItem.module.css'
+import Search from "./Search/Search";
+import classes from './UsersItem.module.css'
 
-const UsersItem = ({deleteUser, users}) => {
-    const dispatch = useDispatch()
+
+const UsersItem = ({deleteUser, users, searchValue, setSearchValue }) => {
 
     return (
         <div>
+            <Search setSearchValue={setSearchValue}/>
             <table className="table">
                 <thead>
                 <tr>
                     <th scope="col">id</th>
-                    <th scope="col" onClick={() => dispatch(sortUsersAc())}>First name</th>
+                    <th scope="col">First name</th>
                     <th scope="col">Last name</th>
                     <th scope="col">Email</th>
                     <th scope="col">Phone</th>
                 </tr>
                 </thead>
                 <tbody>
-                {users.map(u =>
+                {users.filter
+                (el => el.firstName.toLowerCase().includes(searchValue.toLowerCase())).map(u =>
                     <tr
                         onClick={() => deleteUser(u.id)}
                         key={Math.random() * 1000}>
