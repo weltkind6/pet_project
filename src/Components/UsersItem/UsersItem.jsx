@@ -22,25 +22,21 @@ const UsersItem = ({deleteUser, users, searchValue, setSearchValue}) => {
                 </tr>
                 </thead>
 
-               <TransitionGroup component='tbody'>
-                    {users.filter(el => el.firstName.toLowerCase().includes(searchValue.toLowerCase())).map(u =>
-                        <CSSTransition key={Math.random() * 1000} timeout={500} classNames="item"
-                                       onClick={() => deleteUser(u.id)}>
-                            <tr>
-                                <td>{u.id}</td>
-                                <td>{u.firstName}</td>
-                                <td>{u.lastName}</td>
-                                <td>{u.email}</td>
-                                <td>{u.phone}</td>
-                            </tr>
-                        </CSSTransition>
-                    )}
-               </TransitionGroup>
-
+                <tbody>
+                {users.filter(el => el.firstName.toLowerCase().includes(searchValue.toLowerCase())).map(u =>
+                    <tr key={Math.random() * 1000} onClick={() => deleteUser(u.id)}>
+                        <td>{u.id}</td>
+                        <td>{u.firstName}</td>
+                        <td>{u.lastName}</td>
+                        <td>{u.email}</td>
+                        <td>{u.phone}</td>
+                    </tr>
+                )}
+                </tbody>
             </table>
 
         </div>
-);
+    );
 };
 
 export default UsersItem;

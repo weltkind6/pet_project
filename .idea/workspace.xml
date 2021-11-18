@@ -23,16 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f624c24e-852c-42f6-a90b-2203088773c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/usersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/usersReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/cashReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/store/cashReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/store/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +161,8 @@
       <workItem from="1637157638957" duration="498000" />
       <workItem from="1637158170276" duration="12000" />
       <workItem from="1637220528941" duration="7000" />
-      <workItem from="1637220647371" duration="8355000" />
+      <workItem from="1637220647371" duration="14550000" />
+      <workItem from="1637244062484" duration="108000" />
     </task>
     <servers />
   </component>
@@ -197,22 +191,22 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="740" y="315" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1637147920617" />
-    <state width="1882" height="279" key="GridCell.Tab.0.bottom" timestamp="1637220690441">
+    <state width="1882" height="279" key="GridCell.Tab.0.bottom" timestamp="1637244169743">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1637220690441" />
-    <state width="1882" height="279" key="GridCell.Tab.0.center" timestamp="1637220690441">
+    <state width="1882" height="279" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1637244169743" />
+    <state width="1882" height="279" key="GridCell.Tab.0.center" timestamp="1637244169742">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1637220690441" />
-    <state width="1882" height="279" key="GridCell.Tab.0.left" timestamp="1637220690440">
+    <state width="1882" height="279" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1637244169742" />
+    <state width="1882" height="279" key="GridCell.Tab.0.left" timestamp="1637244169742">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1637220690440" />
-    <state width="1882" height="279" key="GridCell.Tab.0.right" timestamp="1637220690441">
+    <state width="1882" height="279" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1637244169742" />
+    <state width="1882" height="279" key="GridCell.Tab.0.right" timestamp="1637244169742">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1637220690441" />
+    <state width="1882" height="279" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1637244169742" />
     <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1637142278715">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
