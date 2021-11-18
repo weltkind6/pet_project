@@ -1,9 +1,0 @@
-.usersItem {
-    padding: 1em;
-    margin: 1em;
-    border: 2px solid black;
-    cursor: pointer;
-}
-td:hover {
-    cursor: pointer;
-}

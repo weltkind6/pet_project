@@ -1,13 +1,15 @@
 import React from 'react';
-import './UsersItem.module.css'
+import './UsersItem.css'
 import Search from "./Search/Search";
-import classes from './UsersItem.module.css'
+import {CSSTransition, TransitionGroup} from "react-transition-group";
 
 
-const UsersItem = ({deleteUser, users, searchValue, setSearchValue }) => {
+const UsersItem = ({deleteUser, users, searchValue, setSearchValue}) => {
+    const id = Math.random() * 1000
 
     return (
         <div>
+
             <Search setSearchValue={setSearchValue}/>
             <table className="table">
                 <thead>
@@ -19,22 +21,26 @@ const UsersItem = ({deleteUser, users, searchValue, setSearchValue }) => {
                     <th scope="col">Phone</th>
                 </tr>
                 </thead>
-                <tbody>
-                {users.filter
-                (el => el.firstName.toLowerCase().includes(searchValue.toLowerCase())).map(u =>
-                    <tr
-                        onClick={() => deleteUser(u.id)}
-                        key={Math.random() * 1000}>
-                        <td>{u.id}</td>
-                        <td>{u.firstName}</td>
-                        <td>{u.lastName}</td>
-                        <td>{u.email}</td>
-                        <td>{u.phone}</td>
-                    </tr>)}
-                </tbody>
+
+               <TransitionGroup component='tbody'>
+                    {users.filter(el => el.firstName.toLowerCase().includes(searchValue.toLowerCase())).map(u =>
+                        <CSSTransition key={Math.random() * 1000} timeout={500} classNames="item"
+                                       onClick={() => deleteUser(u.id)}>
+                            <tr>
+                                <td>{u.id}</td>
+                                <td>{u.firstName}</td>
+                                <td>{u.lastName}</td>
+                                <td>{u.email}</td>
+                                <td>{u.phone}</td>
+                            </tr>
+                        </CSSTransition>
+                    )}
+               </TransitionGroup>
+
             </table>
+
         </div>
-    );
+);
 };
 
 export default UsersItem;

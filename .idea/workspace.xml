@@ -23,20 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f624c24e-852c-42f6-a90b-2203088773c2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/asyncActions/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/asyncActions/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Search/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersItem/Search/Search.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Search/Search.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersItem/Search/Search.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UsersForm/UsersForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersForm/UsersForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UsersForm/UsersItem/FormItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersForm/FormItem/FormItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/getUsersReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.module.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/usersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/usersReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Button/MyButton.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Button/MyButton.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/Preloader/Preloader.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Preloader/Preloader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/cashReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/store/cashReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/store/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,11 +90,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Front-end\pet_project\src\Redux" />
       <recent name="C:\Front-end\pet_project\src\Components\UsersItem" />
       <recent name="C:\Front-end\pet_project\src\Components\UsersForm\UsersItem" />
       <recent name="C:\Front\pet-app\src\Redux\Reducers" />
       <recent name="C:\Front\pet-app\src\Redux" />
-      <recent name="C:\Front\pet-app\src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Front\pet-app\src\UI\Preloader" />
@@ -172,7 +168,7 @@
       <workItem from="1637157638957" duration="498000" />
       <workItem from="1637158170276" duration="12000" />
       <workItem from="1637220528941" duration="7000" />
-      <workItem from="1637220647371" duration="3299000" />
+      <workItem from="1637220647371" duration="8355000" />
     </task>
     <servers />
   </component>

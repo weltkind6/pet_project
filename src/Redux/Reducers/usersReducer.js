@@ -1,8 +1,7 @@
 const initialState = {
-    userCount: [],
-    filteredItems: []
+    userCount: []
 }
-console.log(initialState.userCount)
+
 const ADD_USER = 'ADD-USER'
 const DELETE_USER = 'DELETE-USER'
 const ADD_API_USER = 'ADD-API-USERS'

@@ -1,8 +1,8 @@
 import {applyMiddleware, combineReducers, createStore} from "redux";
-import {usersReducer} from "../Redux/Reducers/usersReducer";
+import {usersReducer} from "../Reducers/usersReducer";
 import {composeWithDevTools} from "redux-devtools-extension";
 import thunk from "redux-thunk";
-import {preloaderReducer} from "../Redux/Reducers/preloaderReducer";
+import {preloaderReducer} from "../Reducers/preloaderReducer";
 
 
 
