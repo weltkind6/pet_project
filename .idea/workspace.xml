@@ -22,10 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f624c24e-852c-42f6-a90b-2203088773c2" name="Changes" comment="">
+    <list default="true" id="f624c24e-852c-42f6-a90b-2203088773c2" name="Changes" comment="Add filter using Redux!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UsersItem/Search/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersItem/Search/Search.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/usersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/usersReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +72,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -163,6 +165,13 @@
       <workItem from="1637220528941" duration="7000" />
       <workItem from="1637220647371" duration="14550000" />
       <workItem from="1637244062484" duration="108000" />
+      <workItem from="1637244185212" duration="820000" />
+      <workItem from="1637252059676" duration="204000" />
+      <workItem from="1637306581369" duration="7729000" />
+      <workItem from="1637323221327" duration="696000" />
+      <workItem from="1637335636877" duration="4281000" />
+      <workItem from="1637340315922" duration="64000" />
+      <workItem from="1637340396003" duration="57000" />
     </task>
     <servers />
   </component>
@@ -184,32 +193,33 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add new user form. 4 in 1 hook" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new user form. 4 in 1 hook" />
+    <MESSAGE value="Add filter using Redux!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add filter using Redux!" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="315" key="FileChooserDialogImpl" timestamp="1637147920617">
+    <state x="740" y="315" key="FileChooserDialogImpl" timestamp="1637340402255">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="740" y="315" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1637147920617" />
-    <state width="1882" height="279" key="GridCell.Tab.0.bottom" timestamp="1637244169743">
+    <state x="740" y="315" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1637340402255" />
+    <state width="1882" height="279" key="GridCell.Tab.0.bottom" timestamp="1637340314038">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1637244169743" />
-    <state width="1882" height="279" key="GridCell.Tab.0.center" timestamp="1637244169742">
+    <state width="1882" height="279" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1637340314038" />
+    <state width="1882" height="279" key="GridCell.Tab.0.center" timestamp="1637340314037">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1637244169742" />
-    <state width="1882" height="279" key="GridCell.Tab.0.left" timestamp="1637244169742">
+    <state width="1882" height="279" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1637340314037" />
+    <state width="1882" height="279" key="GridCell.Tab.0.left" timestamp="1637340314037">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1637244169742" />
-    <state width="1882" height="279" key="GridCell.Tab.0.right" timestamp="1637244169742">
+    <state width="1882" height="279" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1637340314037" />
+    <state width="1882" height="279" key="GridCell.Tab.0.right" timestamp="1637340314037">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1637244169742" />
-    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1637142278715">
+    <state width="1882" height="279" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1637340314037" />
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1637312195323">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1637142278715" />
+    <state x="623" y="269" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1637312195323" />
   </component>
 </project>

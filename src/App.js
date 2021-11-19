@@ -7,17 +7,16 @@ import React, {useState} from "react";
 import UsersForm from "./Components/UsersForm/UsersForm";
 import MyButton from "./UI/Button/MyButton";
 import Preloader from "./UI/Preloader/Preloader";
-import Search from "./Components/UsersItem/Search/Search";
+
 
 
 function App() {
 
     const dispatch = useDispatch()
-    const users = useSelector(state => state.user.userCount)
+    const users = useSelector(state => state.user.users)
     const newReducer = useSelector(state => state.preloader.loaded)
     const [formAction, setFormAction] = useState(false)
     // search
-    const [searchValue, setSearchValue] = useState('')
 
     // Add 4 in 1 hook
     const [addNewUser, setAddNewUser] = useState({
@@ -54,8 +53,6 @@ function App() {
                 <UsersItem
                     deleteUser={deleteUser}
                     users={users}
-                    setSearchValue={setSearchValue}
-                    searchValue={searchValue}
                 />
                 {formAction ?
                     <UsersForm

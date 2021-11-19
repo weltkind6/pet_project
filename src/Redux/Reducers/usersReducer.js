@@ -1,19 +1,25 @@
 const initialState = {
-    userCount: []
+    users: [],
+    searchFilter: [],
+    searchText: ''
 }
 
 const ADD_USER = 'ADD-USER'
 const DELETE_USER = 'DELETE-USER'
 const ADD_API_USER = 'ADD-API-USERS'
+const FILTERED_USERS = 'FILTERED_USERS'
 
 export const usersReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_USER:
-            return {...state, userCount: [...state.userCount, action.payload]}
+            return {...state, users: [...state.users, action.payload]}
         case DELETE_USER:
-            return {...state, userCount: state.userCount.filter(el => el.id !== action.payload)}
+            return {...state, users: state.users.filter(el => el.id !== action.payload)}
         case ADD_API_USER:
-            return {...state, userCount: [...state.userCount, ...action.payload]}
+            return {...state, users: [...state.users, ...action.payload]}
+        case FILTERED_USERS: {
+            return {...state, searchFilter: [...state.users], searchText: action.payload}
+        }
         default:
             return state
     }
@@ -27,6 +33,7 @@ export function deleteUserActionCreator(payload) {
     }
 }
 export const addManyUsersAc = payload => ({type: ADD_API_USER, payload})
+export const searchFilterAc = searchText => ({type: FILTERED_USERS, payload: searchText})
 
 
 

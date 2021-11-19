@@ -1,16 +1,20 @@
 import React from 'react';
 import './UsersItem.css'
 import Search from "./Search/Search";
-import {CSSTransition, TransitionGroup} from "react-transition-group";
+import {useSelector} from "react-redux";
 
 
-const UsersItem = ({deleteUser, users, searchValue, setSearchValue}) => {
-    const id = Math.random() * 1000
+
+const UsersItem = ({deleteUser, users}) => {
+
+    const searchText = useSelector(state => state.user.searchText)
+
+    // const getFilteredUser = useSelector
+    // (state => state.user.searchFilter.filter(el => el.firstName.includes(searchText)))
 
     return (
         <div>
-
-            <Search setSearchValue={setSearchValue}/>
+            <Search/>
             <table className="table">
                 <thead>
                 <tr>
@@ -21,9 +25,9 @@ const UsersItem = ({deleteUser, users, searchValue, setSearchValue}) => {
                     <th scope="col">Phone</th>
                 </tr>
                 </thead>
-
                 <tbody>
-                {users.filter(el => el.firstName.toLowerCase().includes(searchValue.toLowerCase())).map(u =>
+
+                {users.filter(el => el.firstName.toLowerCase().includes(searchText.toLowerCase())).map(u =>
                     <tr key={Math.random() * 1000} onClick={() => deleteUser(u.id)}>
                         <td>{u.id}</td>
                         <td>{u.firstName}</td>
@@ -32,6 +36,7 @@ const UsersItem = ({deleteUser, users, searchValue, setSearchValue}) => {
                         <td>{u.phone}</td>
                     </tr>
                 )}
+
                 </tbody>
             </table>
 
