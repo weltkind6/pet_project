@@ -25,7 +25,6 @@
     <list default="true" id="f624c24e-852c-42f6-a90b-2203088773c2" name="Changes" comment="Add filter using Redux!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UsersItem/Search/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersItem/Search/Search.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/usersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/usersReducer.js" afterDir="false" />
     </list>
@@ -172,6 +171,9 @@
       <workItem from="1637335636877" duration="4281000" />
       <workItem from="1637340315922" duration="64000" />
       <workItem from="1637340396003" duration="57000" />
+      <workItem from="1637393076796" duration="1212000" />
+      <workItem from="1637394308228" duration="6000" />
+      <workItem from="1637673456387" duration="2140000" />
     </task>
     <servers />
   </component>
@@ -197,26 +199,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="Add filter using Redux!" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="315" key="FileChooserDialogImpl" timestamp="1637340402255">
+    <state x="740" y="315" key="FileChooserDialogImpl" timestamp="1637675979512">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="740" y="315" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1637340402255" />
-    <state width="1882" height="279" key="GridCell.Tab.0.bottom" timestamp="1637340314038">
+    <state x="740" y="315" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1637675979512" />
+    <state width="1882" height="279" key="GridCell.Tab.0.bottom" timestamp="1637675980498">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1637340314038" />
-    <state width="1882" height="279" key="GridCell.Tab.0.center" timestamp="1637340314037">
+    <state width="1882" height="279" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1637675980498" />
+    <state width="1882" height="279" key="GridCell.Tab.0.center" timestamp="1637675980498">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1637340314037" />
-    <state width="1882" height="279" key="GridCell.Tab.0.left" timestamp="1637340314037">
+    <state width="1882" height="279" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1637675980498" />
+    <state width="1882" height="279" key="GridCell.Tab.0.left" timestamp="1637675980497">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1637340314037" />
-    <state width="1882" height="279" key="GridCell.Tab.0.right" timestamp="1637340314037">
+    <state width="1882" height="279" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1637675980497" />
+    <state width="1882" height="279" key="GridCell.Tab.0.right" timestamp="1637675980498">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1637340314037" />
+    <state width="1882" height="279" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1637675980498" />
     <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1637312195323">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>

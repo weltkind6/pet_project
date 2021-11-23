@@ -1,6 +1,6 @@
 import './App.css';
 import {useDispatch, useSelector} from "react-redux";
-import {addUserActionCreator, deleteUserActionCreator} from "./Redux/Reducers/usersReducer";
+import {addUserActionCreator, deleteUserActionCreator, sortedUsersAc} from "./Redux/Reducers/usersReducer";
 import {getCustomers} from "./API/asyncActions/users";
 import UsersItem from "./Components/UsersItem/UsersItem";
 import React, {useState} from "react";
@@ -9,15 +9,23 @@ import MyButton from "./UI/Button/MyButton";
 import Preloader from "./UI/Preloader/Preloader";
 
 
-
 function App() {
 
     const dispatch = useDispatch()
     const users = useSelector(state => state.user.users)
     const newReducer = useSelector(state => state.preloader.loaded)
     const [formAction, setFormAction] = useState(false)
+    // Sorting
+    const sorting = useSelector(state => state.user.sortedUsers)
+    const [toggle, setToggle] = useState(false)
+    const sortedUsers = () => {
+        setToggle(!toggle)
+        toggle ? dispatch(sortedUsersAc(users.sort((a, b) => (a.firstName > b.firstName ? 1 : -1)).map((i) => i)))
+            :
+            dispatch(sortedUsersAc(users.sort((a, b) => (a.firstName < b.firstName ? 1 : -1)).map((i) => i)))
+    }
     // search
-
+    const searchText = useSelector(state => state.user.searchText)
     // Add 4 in 1 hook
     const [addNewUser, setAddNewUser] = useState({
         firstName: '',
@@ -32,7 +40,6 @@ function App() {
         }))
         setFormAction(false)
     }
-
 
     // Delete
     const deleteUser = id => {
@@ -53,6 +60,8 @@ function App() {
                 <UsersItem
                     deleteUser={deleteUser}
                     users={users}
+                    searchText={searchText}
+                    sortedUsers={sortedUsers}
                 />
                 {formAction ?
                     <UsersForm
