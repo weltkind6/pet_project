@@ -7,6 +7,7 @@ import React, {useState} from "react";
 import UsersForm from "./Components/UsersForm/UsersForm";
 import MyButton from "./UI/Button/MyButton";
 import Preloader from "./UI/Preloader/Preloader";
+import MoreData from "./Components/MoreData/MoreData";
 
 
 
@@ -20,10 +21,11 @@ function App() {
 
     // Sorting || sorting - selector
     const sorting = useSelector(state => state.user.sortedUsers)
+    console.log(sorting)
 
     // Redux sorting with selectors
-    const testSorting = useSelector(state => state.user.sortedUsers.
-    sort((a, b) => (a.firstName > b.firstName ? 1 : -1)))
+    const testSorting =
+        useSelector(state => state.user.sortedUsers.sort((a, b) => (a.firstName > b.firstName ? 1 : -1)))
     //
 
     const [sortingToggle, setSortingToggle] = useState(false)
@@ -58,6 +60,15 @@ function App() {
     const getFormOnclick = () => {
         setFormAction(true)
     }
+    // Show full info
+    const [moreInfo, setMoreInfo] = useState({
+        id: '',
+        name: '',
+        surname: '',
+        email: '',
+        phone: '',
+        address: ''
+    })
 
     return (
         <div className="App">
@@ -72,7 +83,9 @@ function App() {
                     searchText={searchText}
                     sortedUsers={sortedUsers}
                     testSorting={testSorting}
+                    setMoreInfo={setMoreInfo}
                 />
+
                 {formAction ?
                     <UsersForm
                         setAddNewUser={setAddNewUser}
@@ -83,6 +96,10 @@ function App() {
                     : null
                 }
                 {newReducer ? <Preloader/> : null}
+                <MoreData
+                    users={users}
+                    moreInfo={moreInfo}
+                />
             </div>
         </div>
     );

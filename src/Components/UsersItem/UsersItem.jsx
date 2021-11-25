@@ -4,9 +4,21 @@ import Search from "./Search/Search";
 import * as emoji from "emoji-dictionary";
 
 
-const UsersItem = ({deleteUser, users, searchText, sortedUsers, testSorting}) => {
-    const emo = (emoji.getUnicode("x"));
+const UsersItem = ({deleteUser, users, searchText, sortedUsers, setMoreInfo}) => {
 
+    const emo = (emoji.getUnicode("x"));
+    const getFullInfo = id => {users.map((i) => i.id === id
+                ? setMoreInfo(
+                    {
+                        id: i.id,
+                        name: i.firstName,
+                        surname: i.lastName,
+                        email: i.email,
+                        phone: i.phone,
+                        address: i.address
+                    })
+                : null);
+    }
     return (
         <div>
             <Search/>
@@ -27,10 +39,10 @@ const UsersItem = ({deleteUser, users, searchText, sortedUsers, testSorting}) =>
                     .map(u =>
                         <tr key={Math.random() * 1000}>
                             <td>{u.id}</td>
-                            <td>{u.firstName}</td>
+                            <td onClick={() => getFullInfo(u.id)}>{u.firstName}</td>
                             <td>{u.lastName}</td>
                             <td>{u.email}</td>
-                             <td>{u.phone}</td>
+                            <td>{u.phone}</td>
                             <td onClick={() => deleteUser(u.id)} className='userDelete'>{emo}</td>
                         </tr>
                     )}

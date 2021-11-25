@@ -4,9 +4,15 @@
     border: 2px solid black;
     cursor: pointer;
 }
-td:nth-child(2):hover {
+
+tr:hover {
+    background-color: lightcyan;
+}
+
+td:hover {
     cursor: pointer;
 }
+
 .remove-btn {
     margin-right: 0.5rem;
 }
@@ -14,19 +20,26 @@ td:nth-child(2):hover {
 .item-enter {
     opacity: 0;
 }
+
 .item-enter-active {
     opacity: 1;
     transition: opacity 500ms ease-in;
 }
+
 .item-exit {
     opacity: 1;
 }
+
 .item-exit-active {
     opacity: 0;
     transition: opacity 500ms ease-in;
 }
+
 .userDelete {
     font-weight: bold;
     color: red;
+}
+.userDelete:hover {
+    transform: scale(1.1);
     cursor: pointer;
 }

@@ -23,11 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f624c24e-852c-42f6-a90b-2203088773c2" name="Changes" comment="Add filter using Redux!">
+      <change afterPath="$PROJECT_DIR$/src/Components/MoreData/MoreData.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/MoreData/MoreData.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/API.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UsersItem/Search/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersItem/Search/Search.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" afterDir="false" />
     </list>
@@ -74,7 +74,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/MoreData" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -86,19 +86,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Front-end\pet_project\src\Components\MoreData" />
+      <recent name="C:\Front\pet-app\src\UI\Preloader" />
+      <recent name="C:\Front\pet-app\src\Components\Search" />
+      <recent name="C:\Front\pet-app\src\Redux\Reducers" />
+      <recent name="C:\Front\pet-app\src\UI\Button" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Front-end\pet_project\src\Redux" />
       <recent name="C:\Front-end\pet_project\src\Components\UsersItem" />
       <recent name="C:\Front-end\pet_project\src\Components\UsersForm\UsersItem" />
       <recent name="C:\Front\pet-app\src\Redux\Reducers" />
       <recent name="C:\Front\pet-app\src\Redux" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Front\pet-app\src\UI\Preloader" />
-      <recent name="C:\Front\pet-app\src\Components\Search" />
-      <recent name="C:\Front\pet-app\src\Redux\Reducers" />
-      <recent name="C:\Front\pet-app\src\UI\Button" />
-      <recent name="C:\Front\pet-app\src\UI\Close" />
     </key>
   </component>
   <component name="RunManager">
@@ -183,7 +183,8 @@
       <workItem from="1637740960189" duration="312000" />
       <workItem from="1637741288421" duration="890000" />
       <workItem from="1637771879007" duration="8000" />
-      <workItem from="1637821373525" duration="3970000" />
+      <workItem from="1637821373525" duration="10149000" />
+      <workItem from="1637851864422" duration="2204000" />
     </task>
     <servers />
   </component>
@@ -213,22 +214,22 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="740" y="315" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1637735210021" />
-    <state width="1882" height="279" key="GridCell.Tab.0.bottom" timestamp="1637822578375">
+    <state width="1882" height="279" key="GridCell.Tab.0.bottom" timestamp="1637851941804">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1637822578375" />
-    <state width="1882" height="279" key="GridCell.Tab.0.center" timestamp="1637822578375">
+    <state width="1882" height="279" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1637851941804" />
+    <state width="1882" height="279" key="GridCell.Tab.0.center" timestamp="1637851941804">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1637822578375" />
-    <state width="1882" height="279" key="GridCell.Tab.0.left" timestamp="1637822578374">
+    <state width="1882" height="279" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1637851941804" />
+    <state width="1882" height="279" key="GridCell.Tab.0.left" timestamp="1637851941804">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1637822578374" />
-    <state width="1882" height="279" key="GridCell.Tab.0.right" timestamp="1637822578375">
+    <state width="1882" height="279" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1637851941804" />
+    <state width="1882" height="279" key="GridCell.Tab.0.right" timestamp="1637851941804">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1637822578375" />
+    <state width="1882" height="279" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1637851941804" />
     <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1637312195323">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
