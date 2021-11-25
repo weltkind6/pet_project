@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Search.module.css'
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 import {searchFilterAc} from "../../../Redux/Reducers/usersReducer";
 
 const Search = () => {

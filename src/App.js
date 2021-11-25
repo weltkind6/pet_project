@@ -9,18 +9,27 @@ import MyButton from "./UI/Button/MyButton";
 import Preloader from "./UI/Preloader/Preloader";
 
 
+
+
 function App() {
 
     const dispatch = useDispatch()
     const users = useSelector(state => state.user.users)
     const newReducer = useSelector(state => state.preloader.loaded)
     const [formAction, setFormAction] = useState(false)
-    // Sorting
+
+    // Sorting || sorting - selector
     const sorting = useSelector(state => state.user.sortedUsers)
-    const [toggle, setToggle] = useState(false)
+
+    // Redux sorting with selectors
+    const testSorting = useSelector(state => state.user.sortedUsers.
+    sort((a, b) => (a.firstName > b.firstName ? 1 : -1)))
+    //
+
+    const [sortingToggle, setSortingToggle] = useState(false)
     const sortedUsers = () => {
-        setToggle(!toggle)
-        toggle ? dispatch(sortedUsersAc(users.sort((a, b) => (a.firstName > b.firstName ? 1 : -1)).map((i) => i)))
+        setSortingToggle(!sortingToggle)
+        sortingToggle ? dispatch(sortedUsersAc(users.sort((a, b) => (a.firstName > b.firstName ? 1 : -1)).map((i) => i)))
             :
             dispatch(sortedUsersAc(users.sort((a, b) => (a.firstName < b.firstName ? 1 : -1)).map((i) => i)))
     }
@@ -62,6 +71,7 @@ function App() {
                     users={users}
                     searchText={searchText}
                     sortedUsers={sortedUsers}
+                    testSorting={testSorting}
                 />
                 {formAction ?
                     <UsersForm

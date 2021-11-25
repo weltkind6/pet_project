@@ -4,7 +4,7 @@
     border: 2px solid black;
     cursor: pointer;
 }
-td:hover {
+td:nth-child(2):hover {
     cursor: pointer;
 }
 .remove-btn {
@@ -24,4 +24,9 @@ td:hover {
 .item-exit-active {
     opacity: 0;
     transition: opacity 500ms ease-in;
+}
+.userDelete {
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
 }

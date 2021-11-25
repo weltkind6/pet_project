@@ -1,9 +1,11 @@
 import React from 'react';
 import './UsersItem.css'
 import Search from "./Search/Search";
+import * as emoji from "emoji-dictionary";
 
 
-const UsersItem = ({deleteUser, users, searchText, sortedUsers}) => {
+const UsersItem = ({deleteUser, users, searchText, sortedUsers, testSorting}) => {
+    const emo = (emoji.getUnicode("x"));
 
     return (
         <div>
@@ -23,17 +25,17 @@ const UsersItem = ({deleteUser, users, searchText, sortedUsers}) => {
                 {users.filter
                 (el => el.firstName.toLowerCase().includes(searchText.toLowerCase()))
                     .map(u =>
-                        <tr key={Math.random() * 1000} onClick={() => deleteUser(u.id)}>
+                        <tr key={Math.random() * 1000}>
                             <td>{u.id}</td>
                             <td>{u.firstName}</td>
                             <td>{u.lastName}</td>
                             <td>{u.email}</td>
-                            <td>{u.phone}</td>
+                             <td>{u.phone}</td>
+                            <td onClick={() => deleteUser(u.id)} className='userDelete'>{emo}</td>
                         </tr>
                     )}
                 </tbody>
             </table>
-
         </div>
     );
 };
