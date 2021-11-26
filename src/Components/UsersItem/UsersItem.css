@@ -9,7 +9,7 @@ tr:hover {
     background-color: lightcyan;
 }
 
-td:hover {
+td:nth-child(2) {
     cursor: pointer;
 }
 
@@ -40,6 +40,6 @@ td:hover {
     color: red;
 }
 .userDelete:hover {
-    transform: scale(1.1);
     cursor: pointer;
+    color: #333333;
 }

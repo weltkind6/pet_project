@@ -5,10 +5,16 @@ const MoreData = ({moreInfo}) => {
 
     return (
         <div className='container'>
-            <div>FirstName: {moreInfo.name}</div>
-            <div>LastName: {moreInfo.surname}</div>
-            <div>Email: {moreInfo.email}</div>
-            <div>Address: {moreInfo.address.city}</div>
+            <div><b>ID:</b> {moreInfo.id}</div>
+            <div><b>FirstName:</b> {moreInfo.name}</div>
+            <div><b>LastName:</b> {moreInfo.surname}</div>
+            <div><b>Email:</b> {moreInfo.email}</div>
+            <div><b>Phone:</b> {moreInfo.phone}</div>
+            <div><b>Address:</b> {moreInfo.address.streetAddress}</div>
+            <div><b>City:</b> {moreInfo.address.city}</div>
+            <div><b>State:</b> {moreInfo.address.state}</div>
+            <div><b>Zip:</b> {moreInfo.address.zip}</div>
+            <div><b>Description:</b> {moreInfo.description}</div>
         </div>
     );
 };

@@ -15,7 +15,8 @@ const UsersItem = ({deleteUser, users, searchText, sortedUsers, setMoreInfo}) =>
                         surname: i.lastName,
                         email: i.email,
                         phone: i.phone,
-                        address: i.address
+                        address: i.address,
+                        description: i.description
                     })
                 : null);
     }

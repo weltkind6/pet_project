@@ -20,13 +20,10 @@ function App() {
     const [formAction, setFormAction] = useState(false)
 
     // Sorting || sorting - selector
-    const sorting = useSelector(state => state.user.sortedUsers)
-    console.log(sorting)
-
-    // Redux sorting with selectors
-    const testSorting =
-        useSelector(state => state.user.sortedUsers.sort((a, b) => (a.firstName > b.firstName ? 1 : -1)))
-    //
+    // const sorting = useSelector(state => state.user.sortedUsers)
+    // const testSorting =
+    //     useSelector(state => state.user.sortedUsers.sort((a, b) => (a.firstName > b.firstName ? 1 : -1)))
+    // //
 
     const [sortingToggle, setSortingToggle] = useState(false)
     const sortedUsers = () => {
@@ -67,7 +64,11 @@ function App() {
         surname: '',
         email: '',
         phone: '',
-        address: ''
+        address: '',
+        city: '',
+        state: '',
+        zip: '',
+        description: ''
     })
 
     return (
@@ -82,7 +83,6 @@ function App() {
                     users={users}
                     searchText={searchText}
                     sortedUsers={sortedUsers}
-                    testSorting={testSorting}
                     setMoreInfo={setMoreInfo}
                 />
 
