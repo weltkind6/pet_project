@@ -4,7 +4,7 @@ import React from 'react';
 const MoreData = ({moreInfo}) => {
 
     return (
-        <div className='container'>
+        <div className='content'>
             <div><b>ID:</b> {moreInfo.id}</div>
             <div><b>FirstName:</b> {moreInfo.name}</div>
             <div><b>LastName:</b> {moreInfo.surname}</div>

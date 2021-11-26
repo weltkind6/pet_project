@@ -1,10 +1,12 @@
 const initialState = {
     loaded: false,
-    alert: null
+    alert: null,
+    firstLoad: false
 }
 
 const GET_LOADED = 'GET-LOADED'
 const SHOW_ALERT = 'SHOW-ALERT'
+const FIRST_LOAD = 'FIRST_LOAD'
 
 export const preloaderReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -13,6 +15,8 @@ export const preloaderReducer = (state = initialState, action) => {
         case SHOW_ALERT:
             return {...state, alert: action.payload}
         default: return state
+        case FIRST_LOAD:
+            return {...state, firstLoad: action.payload}
     }
 }
 
@@ -22,4 +26,4 @@ export function preloaderReducerAc(payload) {
         payload
     }
 }
-export const showAlertAc = payload => ({type: SHOW_ALERT, payload})
+export const firstLoadAc = payload => ({type: FIRST_LOAD, payload})

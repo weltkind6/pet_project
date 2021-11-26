@@ -2,13 +2,9 @@ import './App.css';
 import {useDispatch, useSelector} from "react-redux";
 import {addUserActionCreator, deleteUserActionCreator, sortedUsersAc} from "./Redux/Reducers/usersReducer";
 import {getCustomers} from "./API/asyncActions/users";
-import UsersItem from "./Components/UsersItem/UsersItem";
 import React, {useState} from "react";
-import UsersForm from "./Components/UsersForm/UsersForm";
 import MyButton from "./UI/Button/MyButton";
-import Preloader from "./UI/Preloader/Preloader";
-import MoreData from "./Components/MoreData/MoreData";
-
+import Container from "./Components/Container/Container";
 
 
 
@@ -16,7 +12,8 @@ function App() {
 
     const dispatch = useDispatch()
     const users = useSelector(state => state.user.users)
-    const newReducer = useSelector(state => state.preloader.loaded)
+    const preloader = useSelector(state => state.preloader.loaded)
+    const firstLoad = useSelector(state => state.preloader.firstLoad)
     const [formAction, setFormAction] = useState(false)
 
     // Sorting || sorting - selector
@@ -28,7 +25,8 @@ function App() {
     const [sortingToggle, setSortingToggle] = useState(false)
     const sortedUsers = () => {
         setSortingToggle(!sortingToggle)
-        sortingToggle ? dispatch(sortedUsersAc(users.sort((a, b) => (a.firstName > b.firstName ? 1 : -1)).map((i) => i)))
+        sortingToggle ?
+            dispatch(sortedUsersAc(users.sort((a, b) => (a.firstName > b.firstName ? 1 : -1)).map((i) => i)))
             :
             dispatch(sortedUsersAc(users.sort((a, b) => (a.firstName < b.firstName ? 1 : -1)).map((i) => i)))
     }
@@ -76,30 +74,26 @@ function App() {
             <div className="App-wrapper">
                 <div className='buttonsBlock'>
                     <MyButton onClick={() => dispatch(getCustomers())} myClass={'smallDataBtn'}>Small data</MyButton>
-                    <MyButton onClick={getFormOnclick} myClass={'openFormBtn'}>Open form</MyButton>
+                    <MyButton onClick={getFormOnclick} myClass={'openFormBtn'}>New user</MyButton>
                 </div>
-                <UsersItem
-                    deleteUser={deleteUser}
-                    users={users}
-                    searchText={searchText}
-                    sortedUsers={sortedUsers}
-                    setMoreInfo={setMoreInfo}
-                />
-
-                {formAction ?
-                    <UsersForm
-                        setAddNewUser={setAddNewUser}
-                        addNewUser={addNewUser}
-                        addFullUser={addFullUser}
-                        setFormAction={setFormAction}
-                    />
-                    : null
+                {
+                    firstLoad ?
+                        <Container
+                            deleteUser={deleteUser}
+                            sortedUsers={sortedUsers}
+                            addFullUser={addFullUser}
+                            users={users}
+                            searchText={searchText}
+                            setMoreInfo={setMoreInfo}
+                            setAddNewUser={setAddNewUser}
+                            addNewUser={addNewUser}
+                            setFormAction={setFormAction}
+                            moreInfo={moreInfo}
+                            formAction={formAction}
+                            preloader={preloader}
+                        />
+                        : null
                 }
-                {newReducer ? <Preloader/> : null}
-                <MoreData
-                    users={users}
-                    moreInfo={moreInfo}
-                />
             </div>
         </div>
     );
