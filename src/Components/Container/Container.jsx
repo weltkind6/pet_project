@@ -14,6 +14,7 @@ const Container = props => {
                 searchText={props.searchText}
                 sortedUsers={props.sortedUsers}
                 setMoreInfo={props.setMoreInfo}
+                sortingToggle={props.sortingToggle}
             />
 
             {props.formAction ?

@@ -5,11 +5,19 @@
     cursor: pointer;
 }
 
+tr:first-child:hover {
+    background-color: #ffffff;
+}
+
 tr:hover {
     background-color: lightcyan;
 }
 
 td:nth-child(2) {
+    cursor: pointer;
+}
+
+th:nth-child(2) {
     cursor: pointer;
 }
 
@@ -39,7 +47,20 @@ td:nth-child(2) {
     font-weight: bold;
     color: red;
 }
+
 .userDelete:hover {
     cursor: pointer;
     color: #333333;
 }
+
+.arrow {
+    color: red;
+    width: 25px;
+    height: auto;
+    margin: 0 0 5px 5px;
+}
+
+.arrow-down {
+    transform: rotate(180deg);
+}
+

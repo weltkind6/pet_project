@@ -91,6 +91,7 @@ function App() {
                             moreInfo={moreInfo}
                             formAction={formAction}
                             preloader={preloader}
+                            sortingToggle={sortingToggle}
                         />
                         : null
                 }
