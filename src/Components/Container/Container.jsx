@@ -5,6 +5,7 @@ import Preloader from "../../UI/Preloader/Preloader";
 import MoreData from "../MoreData/MoreData";
 
 const Container = props => {
+
     return (
         <>
             <UsersItem
@@ -24,11 +25,11 @@ const Container = props => {
                 />
                 : null
             }
-            {props.preloader ? <Preloader/> : null}
-            <MoreData
-                users={props.users}
-                moreInfo={props.moreInfo}
-            />
+            {
+                props.preloader ? <Preloader/>
+            : <MoreData users={props.users} moreInfo={props.moreInfo}/>
+            }
+
         </>
     );
 };

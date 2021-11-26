@@ -39,7 +39,7 @@ function App() {
         email: '',
         phone: ''
     })
-    const addFullUser = (e) => {
+    const addFullUser = e => {
         e.preventDefault()
         dispatch(addUserActionCreator({
             ...addNewUser, id: Date.now()

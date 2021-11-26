@@ -24,12 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f624c24e-852c-42f6-a90b-2203088773c2" name="Changes" comment="Add filter using Redux!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/asyncActions/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/asyncActions/users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MoreData/MoreData.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MoreData/MoreData.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UsersForm/UsersForm.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersForm/UsersForm.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/Reducers/preloaderReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Reducers/preloaderReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/store/cashReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Container/Container.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MoreData/MoreData.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MoreData/MoreData.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +181,7 @@
       <workItem from="1637771879007" duration="8000" />
       <workItem from="1637821373525" duration="10149000" />
       <workItem from="1637851864422" duration="2449000" />
-      <workItem from="1637908076157" duration="7996000" />
+      <workItem from="1637908076157" duration="9870000" />
     </task>
     <servers />
   </component>
