@@ -3,6 +3,7 @@ import React from 'react';
 
 const MoreData = ({moreInfo}) => {
 
+
     return (
         <div className='content'>
             <div><b>ID:</b> {moreInfo.id}</div>
@@ -10,7 +11,8 @@ const MoreData = ({moreInfo}) => {
             <div><b>LastName:</b> {moreInfo.surname}</div>
             <div><b>Email:</b> {moreInfo.email}</div>
             <div><b>Phone:</b> {moreInfo.phone}</div>
-            <div><b>Address:</b> {moreInfo.address.streetAddress}</div>
+            <h5>Address:</h5>
+            <div><b>Street:</b> {moreInfo.address.streetAddress}</div>
             <div><b>City:</b> {moreInfo.address.city}</div>
             <div><b>State:</b> {moreInfo.address.state}</div>
             <div><b>Zip:</b> {moreInfo.address.zip}</div>

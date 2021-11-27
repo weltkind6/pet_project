@@ -28,7 +28,7 @@ const Container = props => {
             }
             {
                 props.preloader ? <Preloader/>
-            : <MoreData users={props.users} moreInfo={props.moreInfo}/>
+            : <MoreData moreInfo={props.moreInfo}/>
             }
 
         </>

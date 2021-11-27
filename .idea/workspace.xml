@@ -26,8 +26,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Container/Container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Container/Container.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MoreData/MoreData.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MoreData/MoreData.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MoreData/MoreData.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MoreData/MoreData.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -184,7 +183,9 @@
       <workItem from="1637771879007" duration="8000" />
       <workItem from="1637821373525" duration="10149000" />
       <workItem from="1637851864422" duration="2449000" />
-      <workItem from="1637908076157" duration="14703000" />
+      <workItem from="1637908076157" duration="14979000" />
+      <workItem from="1637940939388" duration="964000" />
+      <workItem from="1637996892367" duration="3973000" />
     </task>
     <servers />
   </component>
@@ -214,22 +215,22 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="740" y="315" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1637735210021" />
-    <state width="1882" height="279" key="GridCell.Tab.0.bottom" timestamp="1637909176703">
+    <state width="1882" height="279" key="GridCell.Tab.0.bottom" timestamp="1637997023036">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1637909176703" />
-    <state width="1882" height="279" key="GridCell.Tab.0.center" timestamp="1637909176703">
+    <state width="1882" height="279" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1637997023036" />
+    <state width="1882" height="279" key="GridCell.Tab.0.center" timestamp="1637997023036">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1637909176703" />
-    <state width="1882" height="279" key="GridCell.Tab.0.left" timestamp="1637909176703">
+    <state width="1882" height="279" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1637997023036" />
+    <state width="1882" height="279" key="GridCell.Tab.0.left" timestamp="1637997023035">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1637909176703" />
-    <state width="1882" height="279" key="GridCell.Tab.0.right" timestamp="1637909176703">
+    <state width="1882" height="279" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1637997023035" />
+    <state width="1882" height="279" key="GridCell.Tab.0.right" timestamp="1637997023036">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1637909176703" />
+    <state width="1882" height="279" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1637997023036" />
     <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1637312195323">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>

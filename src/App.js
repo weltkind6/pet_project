@@ -37,7 +37,12 @@ function App() {
         firstName: '',
         lastName: '',
         email: '',
-        phone: ''
+        phone: '',
+        address: '',
+        city: '',
+        state: '',
+        zip: '',
+        description: ''
     })
     const addFullUser = e => {
         e.preventDefault()

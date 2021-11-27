@@ -5,10 +5,10 @@ import * as emoji from "emoji-dictionary";
 
 
 const UsersItem = ({deleteUser, users, searchText, sortedUsers, setMoreInfo, sortingToggle}) => {
-
     const emo = (emoji.getUnicode("x"));
+
     const getFullInfo = id => {
-        users.map((i) => i.id === id
+        users.map(i => i.id === id
             ? setMoreInfo(
                 {
                     id: i.id,
@@ -21,6 +21,10 @@ const UsersItem = ({deleteUser, users, searchText, sortedUsers, setMoreInfo, sor
                 })
             : null);
     }
+
+
+
+
     return (
         <div>
             <Search/>
