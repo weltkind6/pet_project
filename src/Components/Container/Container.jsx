@@ -20,15 +20,18 @@ const Container = props => {
             {props.formAction ?
                 <UsersForm
                     setAddNewUser={props.setAddNewUser}
-                    addNewUser={props.addNewUser}
                     addFullUser={props.addFullUser}
                     setFormAction={props.setFormAction}
+                    name={props.name}
+                    lastName={props.lastName}
+                    email={props.email}
+                    phone={props.phone}
                 />
                 : null
             }
             {
                 props.preloader ? <Preloader/>
-            : <MoreData moreInfo={props.moreInfo}/>
+                    : <MoreData moreInfo={props.moreInfo}/>
             }
 
         </>

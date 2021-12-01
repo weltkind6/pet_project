@@ -5,7 +5,7 @@ import {getCustomers} from "./API/asyncActions/users";
 import React, {useState} from "react";
 import MyButton from "./UI/Button/MyButton";
 import Container from "./Components/Container/Container";
-
+import useInput from "./hooks/useInput";
 
 
 function App() {
@@ -16,12 +16,7 @@ function App() {
     const firstLoad = useSelector(state => state.preloader.firstLoad)
     const [formAction, setFormAction] = useState(false)
 
-    // Sorting || sorting - selector
-    // const sorting = useSelector(state => state.user.sortedUsers)
-    // const testSorting =
-    //     useSelector(state => state.user.sortedUsers.sort((a, b) => (a.firstName > b.firstName ? 1 : -1)))
-    // //
-
+    // Sorting
     const [sortingToggle, setSortingToggle] = useState(false)
     const sortedUsers = () => {
         setSortingToggle(!sortingToggle)
@@ -32,22 +27,29 @@ function App() {
     }
     // search
     const searchText = useSelector(state => state.user.searchText)
-    // Add 4 in 1 hook
-    const [addNewUser, setAddNewUser] = useState({
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        address: '',
-        city: '',
-        state: '',
-        zip: '',
-        description: ''
-    })
+
+    // Add new user
+    const name = useInput()
+    const lastName = useInput()
+    const email = useInput()
+    const phone = useInput()
+    console.log(name)
+
     const addFullUser = e => {
+        const newUser = {
+            firstName: name.user,
+            lastName: lastName.user,
+            email: email.user,
+            phone: phone.user,
+            address: '',
+            city: '',
+            state: '',
+            zip: '',
+            description: ''
+        }
         e.preventDefault()
         dispatch(addUserActionCreator({
-            ...addNewUser, id: Date.now()
+            ...newUser, id: Date.now()
         }))
         setFormAction(false)
     }
@@ -90,13 +92,15 @@ function App() {
                             users={users}
                             searchText={searchText}
                             setMoreInfo={setMoreInfo}
-                            setAddNewUser={setAddNewUser}
-                            addNewUser={addNewUser}
                             setFormAction={setFormAction}
                             moreInfo={moreInfo}
                             formAction={formAction}
                             preloader={preloader}
                             sortingToggle={sortingToggle}
+                            name={name}
+                            lastName={lastName}
+                            email={email}
+                            phone={phone}
                         />
                         : null
                 }

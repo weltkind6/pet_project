@@ -1,39 +1,48 @@
 import React from 'react';
 import './UsersForm.module.css'
 import classes from './UsersForm.module.css';
-import FormItem from "./FormItem/FormItem";
 import Close from "../../UI/Close/Close";
 import MyButton from "../../UI/Button/MyButton";
+import Input from "../../UI/Input/Input";
 
-const UsersForm = ({setAddNewUser, addNewUser, addFullUser, setFormAction}) => {
+
+const UsersForm = ({addFullUser, setFormAction, name, lastName, email, phone}) => {
+
     return (
         <form className={classes.form}>
             <Close setFormAction={setFormAction}/>
             <h5 className={classes.formTitle}>Add new user</h5>
-            <FormItem
-                label={'First name'}
-                ph={'first name'}
-                type={'text'}
-                onChange={e => setAddNewUser({...addNewUser, firstName: e.target.value})}
-            />
-            <FormItem
-                label={'Last name'}
-                ph={'last name'}
-                type={'text'}
-                onChange={e => setAddNewUser({...addNewUser, lastName: e.target.value})}
-            />
-            <FormItem
-                label={'Email'}
-                ph={'example@yahoo.com'}
-                type={'email'}
-                onChange={e => setAddNewUser({...addNewUser, email: e.target.value})}
-            />
-            <FormItem
-                label={'Phone number'}
-                ph={'953-170-3737'}
-                type={'tel'}
-                onChange={e => setAddNewUser({...addNewUser, phone: e.target.value})}
-            />
+
+            <div className={classes.formItem}>
+                <label>First name</label>
+                <Input
+                    placeholder='first name'
+                    {...name}
+                />
+            </div>
+            <div className={classes.formItem}>
+                <label>Last name</label>
+                <Input
+                    placeholder='lastName'
+                    {...lastName}
+                />
+            </div>
+            <div className={classes.formItem}>
+                <label>Email</label>
+                <Input
+                    placeholder='email'
+                    {...email}
+                />
+            </div>
+            <div className={classes.formItem}>
+                <label>Phone</label>
+                <Input
+                    placeholder='tel'
+                    {...phone}
+                />
+            </div>
+
+
             <MyButton onClick={addFullUser} myClass={classes.formButton}>Add user</MyButton>
         </form>
     );

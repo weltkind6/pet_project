@@ -23,11 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f624c24e-852c-42f6-a90b-2203088773c2" name="Changes" comment="Add filter using Redux!">
+      <change afterPath="$PROJECT_DIR$/src/hooks/useInput.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Container/Container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Container/Container.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/MoreData/MoreData.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MoreData/MoreData.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UsersForm/FormItem/FormItem.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UsersForm/UsersForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersForm/UsersForm.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +189,13 @@
       <workItem from="1637851864422" duration="2449000" />
       <workItem from="1637908076157" duration="14979000" />
       <workItem from="1637940939388" duration="964000" />
-      <workItem from="1637996892367" duration="3973000" />
+      <workItem from="1637996892367" duration="5029000" />
+      <workItem from="1638097840550" duration="3783000" />
+      <workItem from="1638121195379" duration="2202000" />
+      <workItem from="1638168539702" duration="10925000" />
+      <workItem from="1638247674865" duration="2137000" />
+      <workItem from="1638278018678" duration="2882000" />
+      <workItem from="1638369724312" duration="3570000" />
     </task>
     <servers />
   </component>
@@ -211,26 +221,30 @@
     <option name="LAST_COMMIT_MESSAGE" value="Add filter using Redux!" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="690" y="307" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1638189650323">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="690" y="307" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1638189650323" />
     <state x="740" y="315" key="FileChooserDialogImpl" timestamp="1637735210021">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="740" y="315" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1637735210021" />
-    <state width="1882" height="279" key="GridCell.Tab.0.bottom" timestamp="1637997023036">
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom" timestamp="1638375060027">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1637997023036" />
-    <state width="1882" height="279" key="GridCell.Tab.0.center" timestamp="1637997023036">
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1638375060027" />
+    <state width="1899" height="281" key="GridCell.Tab.0.center" timestamp="1638375060027">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1637997023036" />
-    <state width="1882" height="279" key="GridCell.Tab.0.left" timestamp="1637997023035">
+    <state width="1899" height="281" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1638375060027" />
+    <state width="1899" height="281" key="GridCell.Tab.0.left" timestamp="1638375060026">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1637997023035" />
-    <state width="1882" height="279" key="GridCell.Tab.0.right" timestamp="1637997023036">
+    <state width="1899" height="281" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1638375060026" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right" timestamp="1638375060027">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1882" height="279" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1637997023036" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1638375060027" />
     <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1637312195323">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
