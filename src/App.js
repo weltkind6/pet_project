@@ -16,7 +16,7 @@ function App() {
     const firstLoad = useSelector(state => state.preloader.firstLoad)
     const [formAction, setFormAction] = useState(false)
 
-    // Sorting
+    // Sorting Можно для сортирвки написать функцию
     const [sortingToggle, setSortingToggle] = useState(false)
     const sortedUsers = () => {
         setSortingToggle(!sortingToggle)
@@ -33,7 +33,7 @@ function App() {
     const lastName = useInput()
     const email = useInput()
     const phone = useInput()
-    console.log(name)
+
 
     const addFullUser = e => {
         const newUser = {
