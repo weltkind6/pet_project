@@ -6,3 +6,4 @@
 4) При клике на имя отображается подробная информация о пользователе в блоке снизу.
 5) Написаны тесты для компонентов: ...
 6) Использованы библиотеки: redux, bootstrap, axios, redux-thunk, react-icons.
+![Screenshot_77](https://user-images.githubusercontent.com/62900479/144754668-17dc8bb7-3879-4eca-8e93-b75b3b8f7965.png)
