@@ -1,6 +1,5 @@
 import {addManyUsersAc} from "../../Redux/Reducers/usersReducer";
 import {firstLoadAc, preloaderReducerAc} from "../../Redux/Reducers/preloaderReducer";
-import {baseUrl} from "../API";
 
 
 // export const getCustomers = () => {
@@ -15,10 +14,10 @@ import {baseUrl} from "../API";
 // }
 
 // High order function!
-export const getCustomers = () => dispatch => {
+export const getCustomers = (url) => (dispatch) => {
     dispatch(preloaderReducerAc(true))
     dispatch(firstLoadAc(true))
-    fetch(baseUrl)
+    fetch(url)
         .then(response => response.json())
         .then(resp => dispatch(addManyUsersAc(resp)))
         .then(() => dispatch(preloaderReducerAc(false)))

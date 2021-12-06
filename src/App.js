@@ -6,6 +6,7 @@ import React, {useState} from "react";
 import MyButton from "./UI/Button/MyButton";
 import Container from "./Components/Container/Container";
 import useInput from "./hooks/useInput";
+import {bigDataUrl, smallDataUrl} from "./API/API";
 
 
 function App() {
@@ -34,19 +35,18 @@ function App() {
     const email = useInput()
     const phone = useInput()
 
-
-    const addFullUser = e => {
-        const newUser = {
-            firstName: name.user,
-            lastName: lastName.user,
-            email: email.user,
-            phone: phone.user,
-            address: '',
-            city: '',
-            state: '',
-            zip: '',
-            description: ''
-        }
+    const newUser = {
+        firstName: name.user,
+        lastName: lastName.user,
+        email: email.user,
+        phone: phone.user,
+        address: '',
+        city: '',
+        state: '',
+        zip: '',
+        description: ''
+    }
+    const addNewUser = e => {
         e.preventDefault()
         dispatch(addUserActionCreator({
             ...newUser, id: Date.now()
@@ -80,15 +80,25 @@ function App() {
         <div className="App">
             <div className="App-wrapper">
                 <div className='buttonsBlock'>
-                    <MyButton onClick={() => dispatch(getCustomers())} myClass={'smallDataBtn'}>Small data</MyButton>
-                    <MyButton onClick={getFormOnclick} myClass={'openFormBtn'}>New user</MyButton>
+                    <MyButton
+                        onClick={() => dispatch(getCustomers(smallDataUrl))}
+                        myClass={'smallDataBtn'}>Small data
+                    </MyButton>
+                    <MyButton
+                        onClick={getFormOnclick}
+                        myClass={'openFormBtn'}>New user
+                    </MyButton>
+                    <MyButton
+                        onClick={() => dispatch(getCustomers(bigDataUrl))}
+                        myClass={'bigDataBtn'}>Big data
+                    </MyButton>
                 </div>
                 {
                     firstLoad ?
                         <Container
                             deleteUser={deleteUser}
                             sortedUsers={sortedUsers}
-                            addFullUser={addFullUser}
+                            addNewUser={addNewUser}
                             users={users}
                             searchText={searchText}
                             setMoreInfo={setMoreInfo}

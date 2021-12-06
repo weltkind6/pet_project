@@ -20,7 +20,7 @@ const Container = props => {
             {props.formAction ?
                 <UsersForm
                     setAddNewUser={props.setAddNewUser}
-                    addFullUser={props.addFullUser}
+                    addNewUser={props.addNewUser}
                     setFormAction={props.setFormAction}
                     name={props.name}
                     lastName={props.lastName}

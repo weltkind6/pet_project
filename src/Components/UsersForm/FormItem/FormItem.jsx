@@ -3,10 +3,11 @@ import classes from "../UsersForm.module.css";
 import Input from "../../../UI/Input/Input";
 
 const FormItem = props => {
+
     return (
         <div className={classes.formItem}>
-            <label>First name</label>
-            <Input placeholder={props.holder}{...props.value}/>
+            <label>{props.label}</label>
+            <Input placeholder={props.holder} {...props.value}/>
         </div>
     );
 };

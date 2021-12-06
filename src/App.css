@@ -1,4 +1,3 @@
-
 .userBlock {
   padding: 1em;
   border: 1px solid red;
@@ -13,6 +12,10 @@
 }
 .smallDataBtn:hover {
   background: #2b995b !important;
+}
+
+.bigDataBtn:hover {
+  background: orangered;
 }
 .buttonsBlock {
   display: flex;

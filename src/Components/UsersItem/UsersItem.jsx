@@ -22,9 +22,6 @@ const UsersItem = ({deleteUser, users, searchText, sortedUsers, setMoreInfo, sor
             : null);
     }
 
-
-
-
     return (
         <div>
             <Search/>
