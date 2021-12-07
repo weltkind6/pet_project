@@ -7,6 +7,7 @@ import MyButton from "./UI/Button/MyButton";
 import Container from "./Components/Container/Container";
 import useInput from "./hooks/useInput";
 import {bigDataUrl, smallDataUrl} from "./API/API";
+import Pagination from "./Components/Pagination/Pagination";
 
 
 function App() {
@@ -75,10 +76,26 @@ function App() {
         zip: '',
         description: ''
     })
+    // Pagination
+
+    const [currentPage, setCurrentPage] = useState(1)
+    const [usersPerPage] = useState(64)
+
+    const lastUsersIndex = currentPage * usersPerPage
+    const firstUsersIndex = lastUsersIndex - usersPerPage
+    const currentUser = users.slice(firstUsersIndex, lastUsersIndex)
+    const goPaginate = pageNumber => setCurrentPage(pageNumber)
+
 
     return (
         <div className="App">
             <div className="App-wrapper">
+                <Pagination
+                    totalUsers={users.length}
+                    usersPerPage={usersPerPage}
+                    currentUser={currentUser}
+                    goPaginate={goPaginate}
+                />
                 <div className='buttonsBlock'>
                     <MyButton
                         onClick={() => dispatch(getCustomers(smallDataUrl))}
@@ -111,9 +128,12 @@ function App() {
                             lastName={lastName}
                             email={email}
                             phone={phone}
+                            currentUser={currentUser}
+
                         />
                         : null
                 }
+
             </div>
         </div>
     );

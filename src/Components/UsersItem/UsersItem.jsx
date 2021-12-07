@@ -4,7 +4,7 @@ import Search from "./Search/Search";
 import * as emoji from "emoji-dictionary";
 
 
-const UsersItem = ({deleteUser, users, searchText, sortedUsers, setMoreInfo, sortingToggle}) => {
+const UsersItem = ({deleteUser, users, searchText, sortedUsers, setMoreInfo, sortingToggle, currentUser}) => {
     const emo = (emoji.getUnicode("x"));
 
     const getFullInfo = id => {
@@ -21,7 +21,9 @@ const UsersItem = ({deleteUser, users, searchText, sortedUsers, setMoreInfo, sor
                 })
             : null);
     }
+    const usersRenderHandler = () => {
 
+    }
     return (
         <div>
             <Search/>
@@ -44,18 +46,36 @@ const UsersItem = ({deleteUser, users, searchText, sortedUsers, setMoreInfo, sor
                 </thead>
                 <tbody>
 
-                {users.filter
-                (el => el.firstName.toLowerCase().includes(searchText.toLowerCase()))
-                    .map(u =>
-                        <tr key={Math.random() * 1000}>
-                            <td>{u.id}</td>
-                            <td onClick={() => getFullInfo(u.id)}>{u.firstName}</td>
-                            <td>{u.lastName}</td>
-                            <td>{u.email}</td>
-                            <td>{u.phone}</td>
-                            <td onClick={() => deleteUser(u.id)} className='userDelete'>{emo}</td>
-                        </tr>
-                    )}
+                {
+
+                    users.length < 100 ?
+
+                            users.filter(el => el.firstName.toLowerCase().includes(searchText.toLowerCase()))
+                                .map(u =>
+                                    <tr key={Math.random() * 1000}>
+                                        <td>{u.id}</td>
+                                        <td onClick={() => getFullInfo(u.id)}>{u.firstName}</td>
+                                        <td>{u.lastName}</td>
+                                        <td>{u.email}</td>
+                                        <td>{u.phone}</td>
+                                        <td onClick={() => deleteUser(u.id)} className='userDelete'>{emo}</td>
+                                    </tr>
+                                )
+
+                        :
+                        currentUser.filter(el => el.firstName.toLowerCase().includes(searchText.toLowerCase()))
+                            .map(u =>
+                                <tr key={Math.random() * 1000}>
+                                    <td>{u.id}</td>
+                                    <td onClick={() => getFullInfo(u.id)}>{u.firstName}</td>
+                                    <td>{u.lastName}</td>
+                                    <td>{u.email}</td>
+                                    <td>{u.phone}</td>
+                                    <td onClick={() => deleteUser(u.id)} className='userDelete'>{emo}</td>
+                                </tr>
+                            )
+                }
+
                 </tbody>
             </table>
         </div>

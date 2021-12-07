@@ -15,6 +15,7 @@ const Container = props => {
                 sortedUsers={props.sortedUsers}
                 setMoreInfo={props.setMoreInfo}
                 sortingToggle={props.sortingToggle}
+                currentUser={props.currentUser}
             />
 
             {props.formAction ?

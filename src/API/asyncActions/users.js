@@ -14,7 +14,7 @@ import {firstLoadAc, preloaderReducerAc} from "../../Redux/Reducers/preloaderRed
 // }
 
 // High order function!
-export const getCustomers = (url) => (dispatch) => {
+export const getCustomers = url => (dispatch) => {
     dispatch(preloaderReducerAc(true))
     dispatch(firstLoadAc(true))
     fetch(url)
