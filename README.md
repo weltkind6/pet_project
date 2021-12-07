@@ -1,12 +1,13 @@
 # Тренировочный проект на React/Redux.
 
-1) Получает пользователей с API ('http://www.filltext.com/?rows=32&id=%7Bnumber%7C1000%7D&firstName=%7BfirstName%7D&lastName=%7BlastName%7D&email=%7Bemail%7D&phone=%7Bphone%7C(xxx)xxx-xx-xx%7D&address=%7BaddressObject%7D&description=%7Blorem%7C32%7D')
-2) При асинхронной загрузке данных отображался preloader.
-3) Реализована возможность добавлять/удалять/сортировать, а так же поиск пользователей с помощью Redux.
-4) При клике на имя отображается подробная информация о пользователе в блоке снизу.
-5) Написаны тесты для компонентов: ...
-6) Использованы библиотеки: redux, bootstrap, axios, redux-thunk, react-icons.
-7) ![Screenshot_77](https://user-images.githubusercontent.com/62900479/144754668-17dc8bb7-3879-4eca-8e93-b75b3b8f7965.png)
+1) Получает пользователей по нажаитию кнопки на выбор с API (32 или 100 пользователей.)
+2) Для кол-ва пользователей === 100 реализован постраничный вывод.
+3) При асинхронной загрузке данных отображался preloader.
+4) Реализована возможность добавлять/удалять/сортировать, а так же поиск пользователей с помощью Redux.
+5) При клике на имя отображается подробная информация о пользователе в блоке снизу.
+6) Написаны тесты для компонентов: ...
+7) Использованы библиотеки: redux, bootstrap, axios, redux-thunk, react-icons.
+8) ![Screenshot_77](https://user-images.githubusercontent.com/62900479/144754668-17dc8bb7-3879-4eca-8e93-b75b3b8f7965.png)
 ![Screenshot_78](https://user-images.githubusercontent.com/62900479/144754731-82f02ea1-1cb1-4f16-ab15-ca985d0c844b.png)
 ![Screenshot_79](https://user-images.githubusercontent.com/62900479/144754732-af2547aa-d3b1-42a4-b406-4f21b5f10954.png)
 
