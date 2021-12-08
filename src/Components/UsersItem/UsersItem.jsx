@@ -29,23 +29,25 @@ const UsersItem = ({
         : null
     );
   };
-  const userRenderHandler = data => {
-      return data.filter((el) =>
-          el.firstName.toLowerCase().includes(searchText.toLowerCase())
+
+  const rerenderDataHandler = (data) => {
+    return data
+      .filter((el) =>
+        el.firstName.toLowerCase().includes(searchText.toLowerCase())
       )
-          .map((u) => (
-              <tr key={Math.random() * 1000}>
-                  <td>{u.id}</td>
-                  <td onClick={() => getFullInfo(u.id)}>{u.firstName}</td>
-                  <td>{u.lastName}</td>
-                  <td>{u.email}</td>
-                  <td>{u.phone}</td>
-                  <td onClick={() => deleteUser(u.id)} className="userDelete">
-                      {emo}
-                  </td>
-              </tr>
-          ))
-  }
+      .map((u) => (
+        <tr key={Math.random() * 1000}>
+          <td>{u.id}</td>
+          <td onClick={() => getFullInfo(u.id)}>{u.firstName}</td>
+          <td>{u.lastName}</td>
+          <td>{u.email}</td>
+          <td>{u.phone}</td>
+          <td onClick={() => deleteUser(u.id)} className="userDelete">
+            {emo}
+          </td>
+        </tr>
+      ));
+  };
 
   return (
     <div>
@@ -68,7 +70,9 @@ const UsersItem = ({
           </tr>
         </thead>
         <tbody>
-          {users.length < 100 ? userRenderHandler(users) : userRenderHandler(currentUser)}
+          {users.length < 100
+            ? rerenderDataHandler(users)
+            : rerenderDataHandler(currentUser)}
         </tbody>
       </table>
     </div>

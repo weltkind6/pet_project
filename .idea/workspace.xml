@@ -22,9 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f624c24e-852c-42f6-a90b-2203088773c2" name="Changes" comment="get big data of users by ckick">
+    <list default="true" id="f624c24e-852c-42f6-a90b-2203088773c2" name="Changes" comment="refactor rendering data in UsersItem.jsx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +68,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -199,6 +198,7 @@
       <workItem from="1638796255600" duration="19000" />
       <workItem from="1638858972463" duration="18475000" />
       <workItem from="1638911155824" duration="370000" />
+      <workItem from="1638947876388" duration="811000" />
     </task>
     <task id="LOCAL-00001" summary="get big data of users by ckick">
       <created>1638795906364</created>
@@ -207,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638795906364</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="refactor rendering data in UsersItem.jsx">
+      <created>1638948146821</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1638948146821</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,37 +237,42 @@
     <MESSAGE value="add new user form. 4 in 1 hook" />
     <MESSAGE value="Add filter using Redux!" />
     <MESSAGE value="get big data of users by click" />
-    <option name="LAST_COMMIT_MESSAGE" value="get big data of users by click" />
+    <MESSAGE value="refactor rendering data in UsersItem.jsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor rendering data in UsersItem.jsx" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="307" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1638791221875">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="690" y="307" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1638791221875" />
-    <state x="740" y="315" key="FileChooserDialogImpl" timestamp="1638796272982">
+    <state x="740" y="315" key="FileChooserDialogImpl" timestamp="1638948629774">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state x="740" y="315" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1638796272982" />
+    <state x="740" y="315" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1638948629774" />
     <state x="765" y="456" key="GitRewordDialog" timestamp="1638795958332">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="765" y="456" key="GitRewordDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1638795958332" />
-    <state width="1899" height="281" key="GridCell.Tab.0.bottom" timestamp="1638911525623">
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom" timestamp="1638948687867">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1638911525623" />
-    <state width="1899" height="281" key="GridCell.Tab.0.center" timestamp="1638911525622">
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1638948687867" />
+    <state width="1899" height="281" key="GridCell.Tab.0.center" timestamp="1638948687866">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1638911525622" />
-    <state width="1899" height="281" key="GridCell.Tab.0.left" timestamp="1638911525622">
+    <state width="1899" height="281" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1638948687866" />
+    <state width="1899" height="281" key="GridCell.Tab.0.left" timestamp="1638948687866">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1638911525622" />
-    <state width="1899" height="281" key="GridCell.Tab.0.right" timestamp="1638911525623">
+    <state width="1899" height="281" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1638948687866" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right" timestamp="1638948687867">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1638911525623" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1638948687867" />
+    <state x="552" y="280" key="Vcs.Push.Dialog.v2" timestamp="1638948477343">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="552" y="280" key="Vcs.Push.Dialog.v2/0.40.1920.1040@0.40.1920.1040" timestamp="1638948477343" />
     <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1637312195323">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
