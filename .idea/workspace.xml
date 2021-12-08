@@ -23,11 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f624c24e-852c-42f6-a90b-2203088773c2" name="Changes" comment="get big data of users by ckick">
-      <change afterPath="$PROJECT_DIR$/src/Components/Pagination/Pagination.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API/asyncActions/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/asyncActions/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Container/Container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Container/Container.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UsersItem/UsersItem.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,7 +197,8 @@
       <workItem from="1638795850915" duration="7000" />
       <workItem from="1638795859221" duration="224000" />
       <workItem from="1638796255600" duration="19000" />
-      <workItem from="1638858972463" duration="18320000" />
+      <workItem from="1638858972463" duration="18475000" />
+      <workItem from="1638911155824" duration="370000" />
     </task>
     <task id="LOCAL-00001" summary="get big data of users by ckick">
       <created>1638795906364</created>
@@ -248,22 +245,22 @@
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
     <state x="765" y="456" key="GitRewordDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1638795958332" />
-    <state width="1899" height="281" key="GridCell.Tab.0.bottom" timestamp="1638859690349">
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom" timestamp="1638911525623">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1638859690349" />
-    <state width="1899" height="281" key="GridCell.Tab.0.center" timestamp="1638859690349">
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1638911525623" />
+    <state width="1899" height="281" key="GridCell.Tab.0.center" timestamp="1638911525622">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1638859690349" />
-    <state width="1899" height="281" key="GridCell.Tab.0.left" timestamp="1638859690348">
+    <state width="1899" height="281" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1638911525622" />
+    <state width="1899" height="281" key="GridCell.Tab.0.left" timestamp="1638911525622">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1638859690348" />
-    <state width="1899" height="281" key="GridCell.Tab.0.right" timestamp="1638859690349">
+    <state width="1899" height="281" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1638911525622" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right" timestamp="1638911525623">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
-    <state width="1899" height="281" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1638859690349" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1638911525623" />
     <state x="623" y="269" width="672" height="678" key="search.everywhere.popup" timestamp="1637312195323">
       <screen x="0" y="40" width="1920" height="1040" />
     </state>
